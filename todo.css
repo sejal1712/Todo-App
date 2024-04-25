@@ -3,15 +3,6 @@ body {
   margin: 0; /* Remove default margin */
 }
 
-.app-container {
-  width: 80%; /* Adjust width as needed */
-  margin: 0 auto; /* Center horizontally */
-  padding: 10px; /* Adjust padding for spacing */
-  display: flex; /* Use flexbox for layout */
-  flex-direction: column; /* Stack elements vertically */
-  align-items: center; /* Center content horizontally */
-}
-
 #main-heading {
   text-align: center;
 }
@@ -46,4 +37,15 @@ body {
   border-radius: 10px;
   padding: 15px 0px;
   cursor: pointer;
+}
+
+@media only screen and (max-width: 768px){
+.app-container {
+  width: 80%; /* Adjust width as needed */
+  margin: 0 auto; /* Center horizontally */
+  padding: 10px; /* Adjust padding for spacing */
+  display: flex; /* Use flexbox for layout */
+  flex-direction: column; /* Stack elements vertically */
+  align-items: center; /* Center content horizontally */
+}
 }
