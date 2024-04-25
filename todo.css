@@ -1,0 +1,64 @@
+body{
+  font-family: 'Arial', sans-serif;
+}
+
+#main-heading{
+  text-align: center;
+}
+
+.grid-container{
+  display: grid;
+  grid-template-columns: 200px 150px 100px;
+  column-gap: 10px;
+  row-gap: 10px;
+  margin-top: 10px;
+  align-items: center;
+  justify-content: center;
+}
+
+#todo-input, #todo-date{
+  font-size: 15px;
+  padding: 10px 5px;
+}
+
+
+.btn-delete{
+  background-color: rgb(143, 14, 14);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 15px 0px;
+  cursor: pointer;
+}
+
+.btn-todo{
+  background-color: rgb(30, 134, 30);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 15px 0px;
+  cursor: pointer;
+}
+
+.mobile-mockup {
+  width: 700px; /* Adjust width as needed */
+  height: 600px; /* Adjust height as needed */
+  background-color: #ddd; /* Light gray background */
+  border-radius: 10px; /* Rounded corners */
+  position: absolute;
+  top: 0;
+  left: 28%;
+  z-index: -1;
+}
+
+.app-container {
+  width: 100%; /* Adjust width as needed */
+  margin: 0 auto; /* Center horizontally */
+  padding: 20px; /* Adjust padding for spacing */
+}
+
+@media only screen and (device-width: 375px) and (device-orientation: portrait) {
+  .mobile-mockup {
+    left: 8%; /* Adjust as needed for iPhone portrait */
+  }
+}
