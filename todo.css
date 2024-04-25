@@ -1,5 +1,6 @@
 body{
   font-family: 'Arial', sans-serif;
+  margin: 0;
 }
 
 #main-heading{
@@ -45,7 +46,7 @@ body{
   height: 600px; /* Adjust height as needed */
   background-color: #ddd; /* Light gray background */
   border-radius: 10px; /* Rounded corners */
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 28%;
   z-index: -1;
@@ -60,5 +61,19 @@ body{
 @media only screen and (device-width: 375px) and (device-orientation: portrait) {
   .mobile-mockup {
     left: 8%; /* Adjust as needed for iPhone portrait */
+  }
+}
+
+
+@media only screen and (max-width: 1100px) { /* For screens less than 768px */
+  .mobile-mockup {
+    width: 90%; /* Adjust width as needed for smaller screens */
+    height: calc(100vh - 50px); /* Set height to viewport height minus some padding */
+  }
+}
+
+@media only screen and (device-width: 375px) and (device-orientation: portrait) {
+  .app-container { /* Adjust for iPhone portrait */
+    padding: 10px; /* Less padding */
   }
 }
