@@ -15,6 +15,7 @@ body{
   margin-top: 10px;
   align-items: center;
   justify-content: center;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 }
 
 #todo-input, #todo-date{
@@ -50,6 +51,7 @@ body{
   top: 0;
   left: 28%;
   z-index: -1;
+  background-size: cover;
 }
 
 .app-container {
@@ -61,6 +63,7 @@ body{
 @media only screen and (device-width: 375px) and (device-orientation: portrait) {
   .mobile-mockup {
     left: 8%; /* Adjust as needed for iPhone portrait */
+    background-size: cover;
   }
 }
 
@@ -69,6 +72,7 @@ body{
   .mobile-mockup {
     width: 90%; /* Adjust width as needed for smaller screens */
     height: calc(100vh - 50px); /* Set height to viewport height minus some padding */
+    background-size: cover;
   }
 }
 
