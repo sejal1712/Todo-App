@@ -1,7 +1,6 @@
 body{
   font-family: 'Arial', sans-serif;
   margin: 0;
-  display: inline;
 }
 
 #main-heading{
@@ -42,17 +41,29 @@ body{
   cursor: pointer;
 }
 
-@media only screen and (max-width: 768px){
-  .app-container {
-    width: 80%; /* Adjust width as needed */
-    margin: 0 auto; /* Center horizontally */
-    padding: 10px; /* Adjust padding for spacing */
-    display: flex; /* Use flexbox for layout */
-    flex-direction: column; /* Stack elements vertically */
-    align-items: center; /* Center content horizontally */
+.app-container{
+  width: 40%;
+  height: 35rem;
+  margin-left: 30%;
+  border-radius: 5%;
+  position: relative;
+}
+
+.background{
+  background-color: gray;
+}
+
+@media (max-width: 455px){
+  .app-container{
+
   }
 
-  body{
-    display: block;
+  .background{
+    width: 100%;
+    right: 8.5rem;
+    top: -23px;
+    border-radius: 0%;
   }
 }
+
+
