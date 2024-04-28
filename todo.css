@@ -44,7 +44,6 @@ body{
 .app-container{
   width: 40%;
   height: 35rem;
-  margin-left: 30%;
   border-radius: 5%;
   position: relative;
 }
@@ -61,8 +60,6 @@ body{
   }
 
   .background{
-    width: 100%;
-    right: 8.5rem;
     top: -23px;
     border-radius: 0%;
   }
