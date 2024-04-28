@@ -54,6 +54,7 @@ body {
 
 @media (max-width: 455px) {
   .app-container {
+    width: 100%;
     flex-direction: column;
     display: flex;
     flex-wrap: wrap;
